@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/FMJ Redondo.png" type="image/x-icon">
+    <title>FMJ</title>
+</head>
+<body>
+    <main id="principal">
+        <header id="logo">
+            <img src="images/FMJ Verde.png" alt="logo FMJ">
+        </header>
+
+        <section id="horario">
+            <h1><div id="date-display"></div></h1>
+            <div id="card-main">
+                <div class="card">
+                    <span id="horas">00</span>
+                    <span class="tempo">Horas</span>
+                </div>
+                <div class="card">
+                    <span id="minutos">00</span>
+                    <span class="tempo">Minutos</span>
+                </div>
+                <div class="card">
+                    <span id="segundos">00</span>
+                    <span class="tempo">Segundos</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="infos">
+            <div id="clima">
+                    <h2 class="cidade">Clima em: </h2>
+                    <p class="temp">Graus</p>
+        
+                    <div class="tempo">
+                        <img class="previsao" alt="Icone-tempo" src="https://openweathermap.org/img/wn/04n.png">
+                        <p class="txt-prev">Clima</p>
+                    </div>
+        
+                    <p class="umidade">Umidade:</p>
+            </div>
+
+            <div id="ferias">
+                <h2>Faltam</h2>
+                <div id="tempo">
+                    <div class="box">
+                        <span data-days="">00</span>
+                        <span>dias</span>
+                    </div>
+
+                    <div class="box">
+                        <span data-hours>00</span>
+                        <span>horas</span>
+                    </div>
+                    <div class="box">
+                        <span data-minutes>00</span>
+                        <span>minutos</span>
+                    </div>
+
+                    <div class="box">
+                        <span data-seconds>00</span>
+                        <span>segundos</span>
+                    </div>
+
+                </div>
+                <footer><h2>Para as férias</h2></footer>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
