@@ -72,7 +72,7 @@ const countdown = () => {
     const now = new Date();
 
     const vacationYear = now.getFullYear();
-    const targetDate = new Date(vacationYear, 10, 21, 0, 0, 0); // 4 de janeiro às 16:00 do próximo ano
+    const targetDate = new Date(vacationYear, 10, 21, 0, 0, 0); 
 
     const timeLeft = targetDate - now;
 
@@ -94,20 +94,16 @@ const monthsOfYear = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho"
 const updateDateDisplay = () => {
     const now = new Date();
     
-    const dayOfWeek = daysOfWeek[now.getDay()];  // Obtém o dia da semana
-    const day = now.getDate();                    // Obtém o dia do mês
-    const month = monthsOfYear[now.getMonth()];   // Obtém o nome do mês
-    const year = now.getFullYear();               // Obtém o ano
+    const dayOfWeek = daysOfWeek[now.getDay()];  
+    const day = now.getDate();                    
+    const month = monthsOfYear[now.getMonth()];   
+    const year = now.getFullYear();               
     
-    // Formata a data
     const formattedDate = `${dayOfWeek}, ${day} de ${month} de ${year}`;
     
-    // Exibe a data
     dateDisplay.innerHTML = formattedDate;
 };
 
-// Atualiza o mostrador assim que a página carrega
 updateDateDisplay();
 
-// Atualiza o mostrador automaticamente a cada 60 segundos (60000 ms)
 setInterval(updateDateDisplay, 60000);
