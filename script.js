@@ -72,7 +72,7 @@ const countdown = () => {
     const now = new Date();
 
     const vacationYear = now.getFullYear();
-    const targetDate = new Date(vacationYear, 10, 21, 0, 0, 0); 
+    const targetDate = new Date(vacationYear, 11, 21, 0, 0, 0); 
 
     const timeLeft = targetDate - now;
 
